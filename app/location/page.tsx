@@ -34,7 +34,7 @@ export default function LocationPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-surface-container-high rounded-xl p-8 lg:p-12 overflow-hidden relative">
           <div className="lg:col-span-6 space-y-4">
             <span className="font-caption-eyebrow text-caption-eyebrow uppercase tracking-widest text-secondary">
-              Pilar, Bataan Peninsula
+              Cupang West, Balanga City, Bataan
             </span>
             <h2 className="font-headline-lg text-headline-lg text-primary">
               Discover Bataan&apos;s Natural Calm
@@ -51,7 +51,7 @@ export default function LocationPage() {
             <div className="pt-2 space-y-2">
               <div className="flex items-center gap-2 font-body-md text-body-md text-on-surface-variant">
                 <MapPin className="h-5 w-5 text-primary" />
-                Pilar, Bataan Peninsula, Philippines
+                Cupang West, Balanga City, Bataan
               </div>
               <div className="flex items-center gap-2 font-body-md text-body-md text-on-surface-variant">
                 <Map className="h-5 w-5 text-primary" />
@@ -72,7 +72,7 @@ export default function LocationPage() {
                 <MapPin className="h-5 w-5 text-primary" />
                 <div>
                   <p className="font-label-md text-label-md text-primary font-semibold">
-                    Pilar, Bataan Peninsula
+                    Cupang West, Balanga City, Bataan
                   </p>
                   <p className="font-body-sm text-body-sm text-outline">
                     Scenic &amp; quiet rural setting
