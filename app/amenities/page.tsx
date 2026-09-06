@@ -1,3 +1,26 @@
+import {
+  LockKeyhole,
+  Sprout,
+  Waves,
+  CalendarDays,
+  ArrowRight,
+  Users,
+  MapPin,
+  Coffee,
+  CookingPot,
+  Refrigerator,
+  Snowflake,
+  Tv,
+  Utensils,
+  Armchair,
+  Fan,
+  Flame,
+  Warehouse,
+  Wifi,
+  Lock,
+  TowelRack,
+  Phone,
+} from "lucide-react";
 export default function AmenitiesPage() {
   return (
     <div className="flex flex-col w-full">
@@ -29,16 +52,16 @@ export default function AmenitiesPage() {
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-4">
             {[
-              { icon: "pool", label: "Private Pool" },
-              { icon: "wifi", label: "High-Speed Wi-Fi" },
-              { icon: "mode_fan", label: "Air Conditioning" },
-              { icon: "skillet", label: "Full Kitchen" },
-              { icon: "deck", label: "Outdoor Seating" },
-              { icon: "outdoor_grill", label: "BBQ Grill Area" },
-              { icon: "garage_home", label: "Gated Parking" },
-            ].map(({ icon, label }) => (
+              { icon: Waves, label: "Private Pool" },
+              { icon: Wifi, label: "High-Speed Wi-Fi" },
+              { icon: Fan, label: "Air Conditioning" },
+              { icon: Refrigerator, label: "Full Kitchen" },
+              { icon: Armchair, label: "Outdoor Seating" },
+              { icon: Flame, label: "BBQ Grill Area" },
+              { icon: Warehouse, label: "Gated Parking" },
+            ].map(({ icon: Icon, label }) => (
               <div key={label} className="flex flex-col items-center text-center p-4 rounded-xl bg-surface-container-lowest shadow-sm">
-                <span className="material-symbols-outlined text-primary mb-2 text-[28px]">{icon}</span>
+                <span className="material-symbols-outlined text-primary mb-2 text-[28px]"><Icon className="h-4 w-4 text-primary" /></span>
                 <span className="font-label-sm text-label-sm text-on-surface">{label}</span>
               </div>
             ))}
@@ -59,34 +82,34 @@ export default function AmenitiesPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
             {
-              icon: "pool",
+              icon: Waves,
               title: "Private Plunge Pool & Garden",
               body: "Immaculately tiled pool framed by sun sails, potted tropical flora, and smooth pebble decks for cool afternoon dips.",
               tag: "Poolside Solace",
             },
             {
-              icon: "chair",
+              icon: Armchair,
               title: "Spacious Living & Dining",
               body: "Sun-drenched salon with custom fluted wood walls, cozy lounge seating, big-screen entertainment, and family dining.",
               tag: "Gather & Unwind",
             },
             {
-              icon: "restaurant",
+              icon: CookingPot,
               title: "Fully-Equipped Kitchen",
               body: "Cook your favorite feasts with a modern breakfast counter, refrigerator, stovetop, cookware, and serveware.",
               tag: "Home-Cooked Joy",
             },
             {
-              icon: "vpn_key",
+              icon: LockKeyhole,
               title: "Exclusive Sanctuary",
               body: "No shared corridors or strangers. Complete private access to the entire gated property for uninterrupted privacy.",
               tag: "Total Seclusion",
             },
-          ].map(({ icon, title, body, tag }) => (
+          ].map(({ icon: Icon, title, body, tag }) => (
             <div key={title} className="bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary mb-4">
-                  <span className="material-symbols-outlined text-2xl">{icon}</span>
+                  <span className="material-symbols-outlined text-2xl"><Icon className="h-4 w-4 text-primary" /></span>
                 </div>
                 <h3 className="font-headline-sm text-headline-sm text-primary mb-2">{title}</h3>
                 <p className="font-body-md text-body-md text-on-surface-variant">{body}</p>
@@ -137,9 +160,9 @@ export default function AmenitiesPage() {
                   </p>
                 </div>
                 <div className="pt-6 flex items-center gap-6 font-body-sm text-body-sm text-outline">
-                  <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-base">tv</span>Smart TV</span>
-                  <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-base">ac_unit</span>Full AC</span>
-                  <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-base">table_restaurant</span>8-Seat Dining</span>
+                  <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-base"><Tv className="h-4 w-4 text-primary" /></span>Smart TV</span>
+                  <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-base"><Fan className="h-4 w-4 text-primary" /></span>Full AC</span>
+                  <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-base"><Utensils className="h-4 w-4 text-primary" /></span>8-Seat Dining</span>
                 </div>
               </div>
             </div>
@@ -165,9 +188,9 @@ export default function AmenitiesPage() {
                   </p>
                 </div>
                 <div className="pt-6 flex items-center gap-6 font-body-sm text-body-sm text-outline">
-                  <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-base">kitchen</span>Refrigerator</span>
-                  <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-base">countertops</span>Island Bar</span>
-                  <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-base">coffee</span>Kettle &amp; Prep</span>
+                  <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-base"><Refrigerator className="h-4 w-4 text-primary" /></span>Refrigerator</span>
+                  <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-base"><Coffee className="h-4 w-4 text-primary" /></span>Island Bar</span>
+                  <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-base"><CookingPot className="h-4 w-4 text-primary" /></span>Kettle &amp; Prep</span>
                 </div>
               </div>
             </div>
@@ -190,7 +213,7 @@ export default function AmenitiesPage() {
               className="inline-flex items-center justify-center gap-2 bg-primary text-on-primary font-label-lg text-label-lg px-8 py-3.5 rounded-lg shadow-sm hover:bg-primary-container transition-all"
             >
               Check Availability
-              <span className="material-symbols-outlined text-base">arrow_forward</span>
+              <span className="material-symbols-outlined text-base"><ArrowRight className="h-4 w-4 text-white" /></span>
             </a>
             <a
               href="/gallery"

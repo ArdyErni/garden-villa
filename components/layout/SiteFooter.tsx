@@ -18,7 +18,7 @@ export default function SiteFooter() {
             </p>
             <div className="pt-space-xs">
               <span className="font-label-sm text-label-sm text-outline tracking-wide">
-                Exclusive Private Sanctuary • Mount Samat Foothills
+                Exclusive Private Sanctuary
               </span>
             </div>
           </div>
@@ -66,7 +66,7 @@ export default function SiteFooter() {
               Inquiries &amp; Location
             </h4>
             <p className="font-body-md text-body-md text-on-surface-variant">
-              Pilar, Bataan Peninsula, Philippines
+              Cupang West, Balanga City, Bataan
             </p>
             <p className="font-body-md text-body-md text-on-surface-variant">
               stay@gardenvillabataan.ph
