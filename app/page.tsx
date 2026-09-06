@@ -1,106 +1,29 @@
+import {
+  LockKeyhole,
+  Sprout,
+  Waves,
+  CalendarDays,
+  ArrowRight,
+  Users,
+  MapPin,
+  Coffee,
+  CookingPot,
+  Refrigerator,
+  Snowflake,
+  Tv,
+  Utensils,
+  Armchair,
+  Fan,
+  Flame,
+  Warehouse,
+  Wifi,
+  Lock,
+  TowelRack,
+  Phone,
+} from "lucide-react";
+
 export default function Home() {
   return (
-    <>
-  <meta charSet="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-    rel="stylesheet"
-  />
-  <style
-    dangerouslySetInnerHTML={{
-      __html:
-        "\n      @layer base {\n        html,\n        body {\n          margin: 0;\n          padding: 0;\n        }\n        body {\n          overscroll-behavior: none;\n        }\n        main > :first-child {\n          margin-top: 0 !important;\n        }\n        main > :last-child {\n          margin-bottom: 0 !important;\n        }\n      }\n      ::-webkit-scrollbar {\n        display: none;\n      }\n    "
-    }}
-  />
-  <header className="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(40,51,49,0.04)]">
-    <div className="bg-surface-container-low text-on-surface-variant text-center py-1.5 px-gutter-mobile md:px-gutter-desktop font-caption-eyebrow text-caption-eyebrow uppercase tracking-widest">
-      Bataan, Philippines • Private Villa Retreat
-    </div>
-    <div className="h-20 max-w-[1240px] mx-auto px-gutter-mobile lg:px-gutter-desktop flex items-center justify-between gap-space-md">
-      <div className="flex items-center gap-space-sm">
-        <img
-          alt="Profile"
-          className="w-8 h-8 rounded-full object-cover"
-          src="https://lh3.googleusercontent.com/aida/AEtjO1XPr2V-rY7YynA4bOvva2nU46WEZwsOEKzfgcCiU3jhRctQbmT_zV7OAMcu3epjVwU1XALyUlPqR3ypo_GS179kDVQ8M5e_ql2kmrq0Ar3l8ZebtRHlMD9NccARrTxzl_RRR5ZPlg1fGfiSgr1NgSlCZM5pP7hZ-YDStlADKjgSITT8jv1dOg7hRrhvoxxzS1xuT3Wx_mXSNH0c9LaY0dCHUtQ44HAeIdcR-jw4CNyT8GBvjBlIfN0ziljxAfve-eltg5z6PEthbg"
-        />
-        <div className="flex flex-col">
-          <span className="font-headline-sm text-headline-sm tracking-tight text-primary">
-            Garden Villa
-          </span>
-          <span className="font-label-sm text-label-sm uppercase tracking-widest text-secondary">
-            Bataan
-          </span>
-        </div>
-      </div>
-      <nav
-        className="hidden lg:flex items-center gap-space-lg"
-        data-active-classes="bg-secondary-container text-on-secondary-container font-label-md text-label-md rounded-lg"
-      >
-        <a
-          aria-current="page"
-          className="transition-colors py-2 px-3 bg-secondary-container text-on-secondary-container font-label-md text-label-md rounded-lg"
-          data-path="home"
-          href="#"
-        >
-          Home
-        </a>
-        <a
-          className="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-2 px-3 rounded-lg"
-          data-path="the-villa"
-          href="#"
-        >
-          The Villa
-        </a>
-        <a
-          className="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-2 px-3 rounded-lg"
-          data-path="gallery"
-          href="gallery"
-        >
-          Gallery
-        </a>
-        <a
-          className="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-2 px-3 rounded-lg"
-          data-path="amenities"
-          href="#"
-        >
-          Amenities
-        </a>
-        <a
-          className="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-2 px-3 rounded-lg"
-          data-path="availability"
-          href="#"
-        >
-          Availability
-        </a>
-        <a
-          className="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-2 px-3 rounded-lg"
-          data-path="location"
-          href="#"
-        >
-          Location
-        </a>
-      </nav>
-      <div className="flex items-center gap-space-sm">
-        <a
-          className="inline-flex items-center justify-center bg-primary-container text-secondary-fixed font-label-md text-label-md px-space-md py-2.5 rounded-lg shadow-sm hover:bg-primary transition-all"
-          data-path="availability"
-          href="#"
-        >
-          Check Availability
-        </a>
-      </div>
-    </div>
-  </header>
-  <main className="w-full pt-20 bg-surface">
     <div className="flex flex-col w-full">
       {/* Immersive Hero Section */}
       <section className="relative w-full min-h-[90vh] lg:min-h-screen flex items-center justify-center overflow-hidden -mt-20">
@@ -109,7 +32,7 @@ export default function Home() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              'url("https://lh3.googleusercontent.com/aida-public/AB6AXuBtsf8Fh25n63ydlP0yWTX-iAPFenFUjbd4w36_bBVuRuITxZlu1yzr6sufEbUpDp9KCzAFSE7pSwWPe6JXJOC_6TSezGo-AuiQw8Hljo6DX778uQ2LrN52Ly7UapD9Jreb-ghCHRCYrFcHmXCjnChoKByV2dovVN2aB6PSkbPtRlEg6UVloBVcWhhDhRz17t-Cgyr48qKGm5zXErraq-ERmiNOEnnLjQi7XRRaG5lrt7qQqlJhNxy7kKinb8Ig-uYUVaM")'
+              'url("https://lh3.googleusercontent.com/aida-public/AB6AXuBtsf8Fh25n63ydlP0yWTX-iAPFenFUjbd4w36_bBVuRuITxZlu1yzr6sufEbUpDp9KCzAFSE7pSwWPe6JXJOC_6TSezGo-AuiQw8Hljo6DX778uQ2LrN52Ly7UapD9Jreb-ghCHRCYrFcHmXCjnChoKByV2dovVN2aB6PSkbPtRlEg6UVloBVcWhhDhRz17t-Cgyr48qKGm5zXErraq-ERmiNOEnnLjQi7XRRaG5lrt7qQqlJhNxy7kKinb8Ig-uYUVaM")',
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-primary/50 via-primary/25 to-surface" />
@@ -135,8 +58,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
             <a
               className="w-full sm:w-auto inline-flex items-center justify-center bg-primary-container hover:bg-primary text-secondary-fixed px-8 py-3.5 rounded-lg font-label-lg text-label-lg shadow-md transition-all duration-200"
-              data-path="availability"
-              href="#"
+              href="/availability"
             >
               Check Availability
             </a>
@@ -150,23 +72,21 @@ export default function Home() {
           {/* Quick Highlights Floating Pill */}
           <div className="mt-16 hidden md:flex items-center gap-8 px-8 py-3.5 rounded-full bg-surface-bright/90 backdrop-blur-md shadow-sm text-on-surface-variant font-label-md text-label-md">
             <span className="flex items-center gap-2">
-              <span className="material-symbols-outlined text-base text-primary">
-                pool
-              </span>
+              <Waves className="h-4 w-4 text-primary" />
               Private Plunge Pool
             </span>
+
             <span className="text-outline-variant">•</span>
+
             <span className="flex items-center gap-2">
-              <span className="material-symbols-outlined text-base text-primary">
-                potted_plant
-              </span>
+              <Sprout className="h-4 w-4 text-primary" />
               Manicured Grounds
             </span>
+
             <span className="text-outline-variant">•</span>
+
             <span className="flex items-center gap-2">
-              <span className="material-symbols-outlined text-base text-primary">
-                lock_clock
-              </span>
+              <LockKeyhole className="h-4 w-4 text-primary" />
               100% Private Access
             </span>
           </div>
@@ -239,9 +159,7 @@ export default function Home() {
               />
               <div className="absolute bottom-6 left-6 right-6 p-4 rounded-lg bg-surface-bright/90 backdrop-blur-md shadow-sm">
                 <p className="font-label-md text-label-md text-primary font-medium flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary text-lg">
-                    nature_people
-                  </span>
+                  <Users className="h-5 w-5 text-primary" />
                   Lush Courtyard &amp; Private Pavilion
                 </p>
                 <p className="font-body-sm text-body-sm text-on-surface-variant">
@@ -269,9 +187,7 @@ export default function Home() {
             <div className="bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary mb-4">
-                  <span className="material-symbols-outlined text-2xl">
-                    pool
-                  </span>
+                  <Waves className="h-5 w-5 text-primary" />
                 </div>
                 <h4 className="font-headline-sm text-headline-sm text-primary mb-2">
                   Private Plunge Pool &amp; Garden
@@ -289,9 +205,7 @@ export default function Home() {
             <div className="bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary mb-4">
-                  <span className="material-symbols-outlined text-2xl">
-                    chair
-                  </span>
+                  <Armchair className="h-5 w-5 text-primary" />
                 </div>
                 <h4 className="font-headline-sm text-headline-sm text-primary mb-2">
                   Spacious Living &amp; Dining
@@ -309,9 +223,7 @@ export default function Home() {
             <div className="bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary mb-4">
-                  <span className="material-symbols-outlined text-2xl">
-                    restaurant
-                  </span>
+                  <Refrigerator className="h-5 w-5 text-primary" />
                 </div>
                 <h4 className="font-headline-sm text-headline-sm text-primary mb-2">
                   Fully-Equipped Kitchen
@@ -329,9 +241,7 @@ export default function Home() {
             <div className="bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary mb-4">
-                  <span className="material-symbols-outlined text-2xl">
-                    vpn_key
-                  </span>
+                  <Lock className="h-5 w-5 text-primary" />
                 </div>
                 <h4 className="font-headline-sm text-headline-sm text-primary mb-2">
                   Exclusive Sanctuary
@@ -392,21 +302,17 @@ export default function Home() {
               </div>
               <div className="pt-6 flex items-center gap-6 font-body-sm text-body-sm text-outline">
                 <span className="flex items-center gap-1.5">
-                  <span className="material-symbols-outlined text-base">
-                    tv
-                  </span>
+                  <Tv className="h-4 w-4" />
                   Smart TV
                 </span>
+
                 <span className="flex items-center gap-1.5">
-                  <span className="material-symbols-outlined text-base">
-                    ac_unit
-                  </span>
+                  <Snowflake className="h-4 w-4" />
                   Full AC
                 </span>
+
                 <span className="flex items-center gap-1.5">
-                  <span className="material-symbols-outlined text-base">
-                    table_restaurant
-                  </span>
+                  <Utensils className="h-4 w-4" />
                   8-Seat Dining
                 </span>
               </div>
@@ -438,21 +344,17 @@ export default function Home() {
               </div>
               <div className="pt-6 flex items-center gap-6 font-body-sm text-body-sm text-outline">
                 <span className="flex items-center gap-1.5">
-                  <span className="material-symbols-outlined text-base">
-                    kitchen
-                  </span>
+                  <Refrigerator className="h-4 w-4" />
                   Refrigerator
                 </span>
+
                 <span className="flex items-center gap-1.5">
-                  <span className="material-symbols-outlined text-base">
-                    countertops
-                  </span>
+                  <CookingPot className="h-4 w-4" />
                   Island Bar
                 </span>
+
                 <span className="flex items-center gap-1.5">
-                  <span className="material-symbols-outlined text-base">
-                    coffee
-                  </span>
+                  <Coffee className="h-4 w-4" />
                   Kettle &amp; Prep
                 </span>
               </div>
@@ -460,7 +362,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* Amenities Strip */}
+      {/* Amenities Teaser */}
       <section className="w-full bg-surface-container py-12">
         <div className="max-w-[1240px] mx-auto px-gutter-mobile lg:px-gutter-desktop">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
@@ -474,74 +376,67 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-4 w-full flex-1">
               <div className="flex flex-col items-center text-center p-3 rounded-lg bg-surface-bright/70">
-                <span className="material-symbols-outlined text-primary mb-1">
-                  pool
-                </span>
+                <Waves className="h-5 w-5 text-primary" />
                 <span className="font-label-sm text-label-sm text-on-surface">
                   Private Pool
                 </span>
               </div>
               <div className="flex flex-col items-center text-center p-3 rounded-lg bg-surface-bright/70">
-                <span className="material-symbols-outlined text-primary mb-1">
-                  wifi
-                </span>
+                <Wifi className="h-5 w-5 text-primary" />
                 <span className="font-label-sm text-label-sm text-on-surface">
                   High-Speed Wi-Fi
                 </span>
               </div>
               <div className="flex flex-col items-center text-center p-3 rounded-lg bg-surface-bright/70">
-                <span className="material-symbols-outlined text-primary mb-1">
-                  mode_fan
-                </span>
+                <Fan className="h-5 w-5 text-primary" />
                 <span className="font-label-sm text-label-sm text-on-surface">
                   Air Conditioning
                 </span>
               </div>
               <div className="flex flex-col items-center text-center p-3 rounded-lg bg-surface-bright/70">
-                <span className="material-symbols-outlined text-primary mb-1">
-                  skillet
-                </span>
+                <Refrigerator className="h-5 w-5 text-primary" />
                 <span className="font-label-sm text-label-sm text-on-surface">
                   Full Kitchen
                 </span>
               </div>
               <div className="flex flex-col items-center text-center p-3 rounded-lg bg-surface-bright/70">
-                <span className="material-symbols-outlined text-primary mb-1">
-                  deck
-                </span>
+                <Armchair className="h-5 w-5 text-primary" />
                 <span className="font-label-sm text-label-sm text-on-surface">
                   Outdoor Seating
                 </span>
               </div>
               <div className="flex flex-col items-center text-center p-3 rounded-lg bg-surface-bright/70">
-                <span className="material-symbols-outlined text-primary mb-1">
-                  outdoor_grill
-                </span>
+                <Flame className="h-5 w-5 text-primary" />
                 <span className="font-label-sm text-label-sm text-on-surface">
                   BBQ Grill Area
                 </span>
               </div>
               <div className="flex flex-col items-center text-center p-3 rounded-lg bg-surface-bright/70">
-                <span className="material-symbols-outlined text-primary mb-1">
-                  garage_home
-                </span>
+                <Warehouse className="h-5 w-5 text-primary" />
                 <span className="font-label-sm text-label-sm text-on-surface">
                   Gated Parking
                 </span>
               </div>
             </div>
           </div>
+          <div className="mt-8 text-center">
+            <a
+              href="/amenities"
+              className="inline-flex items-center gap-2 font-label-md text-label-md text-primary hover:text-primary-container font-semibold transition-colors"
+            >
+              View all amenities &amp; spaces
+              <ArrowRight className="h-4 w-4" />
+            </a>
+          </div>
         </div>
       </section>
-      {/* Interactive Availability & Booking Card Preview */}
+      {/* Availability Teaser */}
       <section className="w-full py-space-3xl max-w-[1240px] mx-auto px-gutter-mobile lg:px-gutter-desktop">
         <div className="bg-surface-container-lowest rounded-xl shadow-md p-8 lg:p-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            <div className="lg:col-span-5 space-y-5">
+            <div className="lg:col-span-7 space-y-5">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider">
-                <span className="material-symbols-outlined text-xs">
-                  calendar_today
-                </span>
+                <CalendarDays className="h-4 w-4 text-secondary" />
                 Instant Booking Inquiries
               </div>
               <h3 className="font-headline-lg text-headline-lg text-primary">
@@ -550,227 +445,43 @@ export default function Home() {
               <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
                 Due to our exclusive single-booking privacy policy, dates fill
                 quickly during weekends and national holidays. Select your
-                desired timeframe below to check real-time villa availability.
+                desired timeframe to check real-time villa availability.
               </p>
-              <div className="space-y-3 pt-2">
-                <div className="flex items-center gap-3 text-on-surface">
-                  <span className="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-primary text-xs font-semibold">
-                    ✓
-                  </span>
-                  <span className="font-body-md text-body-md">
-                    Exclusive full villa access included
-                  </span>
-                </div>
-                <div className="flex items-center gap-3 text-on-surface">
-                  <span className="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-primary text-xs font-semibold">
-                    ✓
-                  </span>
-                  <span className="font-body-md text-body-md">
-                    No corkage fees for food &amp; drinks
-                  </span>
-                </div>
-                <div className="flex items-center gap-3 text-on-surface">
-                  <span className="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-primary text-xs font-semibold">
-                    ✓
-                  </span>
-                  <span className="font-body-md text-body-md">
-                    Flexible cancellation with advance notice
-                  </span>
-                </div>
+              <div className="flex flex-col sm:flex-row gap-4 pt-2">
+                <a
+                  href="/availability"
+                  className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-container text-surface-bright px-8 py-3.5 rounded-lg font-label-lg text-label-lg transition-all shadow-sm"
+                >
+                  Check Availability
+                  <ArrowRight className="h-4 w-4" />
+                </a>
+                <a
+                  href="tel:+639178008455"
+                  className="inline-flex items-center justify-center gap-2 bg-surface-container text-primary px-8 py-3.5 rounded-lg font-label-lg text-label-lg transition-all"
+                >
+                  <Phone className="h-4 w-4" />
+                  Speak with Concierge
+                </a>
               </div>
             </div>
-            {/* Interactive Mini Calendar Selector Widget */}
-            <div className="lg:col-span-7 bg-surface-container-low rounded-xl p-6 lg:p-8">
-              <div className="flex items-center justify-between mb-6 pb-4 border-b border-surface-container-highest">
-                <div className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-primary">
-                    date_range
-                  </span>
-                  <span className="font-headline-sm text-headline-sm text-primary">
-                    Select Desired Dates
-                  </span>
-                </div>
-                <div className="flex items-center gap-1.5 text-xs text-outline font-label-sm">
-                  <span className="w-2.5 h-2.5 rounded-full bg-primary inline-block" />
-                  Selected
-                  <span className="w-2.5 h-2.5 rounded-full bg-secondary-fixed-dim inline-block ml-2" />
-                  Available
-                </div>
+            <div className="lg:col-span-5 bg-surface-container-low rounded-xl p-6 space-y-4">
+              <div className="flex items-center gap-3 text-on-surface">
+                <span className="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-primary text-xs font-semibold">✓</span>
+                <span className="font-body-md text-body-md">Exclusive full villa access included</span>
               </div>
-              {/* Date Inputs Row */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-                <div className="bg-surface-container-lowest p-3 rounded-lg shadow-sm">
-                  <label className="block font-label-sm text-label-sm text-outline uppercase tracking-wider mb-1">
-                    Check-in
-                  </label>
-                  <div className="font-label-lg text-label-lg text-primary font-semibold flex items-center justify-between">
-                    <span>Oct 18, 2025</span>
-                    <span className="material-symbols-outlined text-secondary text-sm">
-                      calendar_month
-                    </span>
-                  </div>
-                </div>
-                <div className="bg-surface-container-lowest p-3 rounded-lg shadow-sm">
-                  <label className="block font-label-sm text-label-sm text-outline uppercase tracking-wider mb-1">
-                    Check-out
-                  </label>
-                  <div className="font-label-lg text-label-lg text-primary font-semibold flex items-center justify-between">
-                    <span>Oct 20, 2025</span>
-                    <span className="material-symbols-outlined text-secondary text-sm">
-                      calendar_month
-                    </span>
-                  </div>
-                </div>
-                <div className="bg-surface-container-lowest p-3 rounded-lg shadow-sm">
-                  <label className="block font-label-sm text-label-sm text-outline uppercase tracking-wider mb-1">
-                    Total Guests
-                  </label>
-                  <div className="font-label-lg text-label-lg text-primary font-semibold flex items-center justify-between">
-                    <span>8 Guests</span>
-                    <span className="material-symbols-outlined text-secondary text-sm">
-                      group
-                    </span>
-                  </div>
-                </div>
+              <div className="flex items-center gap-3 text-on-surface">
+                <span className="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-primary text-xs font-semibold">✓</span>
+                <span className="font-body-md text-body-md">No corkage fees for food &amp; drinks</span>
               </div>
-              {/* Quick Mock Calendar Grid */}
-              <div className="bg-surface-container-lowest p-4 rounded-lg shadow-sm mb-6">
-                <div className="flex items-center justify-between mb-3 text-center">
-                  <span className="font-label-md text-label-md text-primary font-semibold">
-                    October 2025
-                  </span>
-                  <div className="flex gap-1 text-on-surface-variant">
-                    <button className="p-1 rounded hover:bg-surface-container">
-                      <span className="material-symbols-outlined text-sm">
-                        chevron_left
-                      </span>
-                    </button>
-                    <button className="p-1 rounded hover:bg-surface-container">
-                      <span className="material-symbols-outlined text-sm">
-                        chevron_right
-                      </span>
-                    </button>
-                  </div>
-                </div>
-                <div className="grid grid-cols-7 gap-1 text-center font-label-sm text-label-sm text-outline mb-2">
-                  <span>S</span>
-                  <span>M</span>
-                  <span>T</span>
-                  <span>W</span>
-                  <span>T</span>
-                  <span>F</span>
-                  <span>S</span>
-                </div>
-                <div className="grid grid-cols-7 gap-1 text-center font-body-sm text-body-sm">
-                  <span className="text-outline-variant p-1">28</span>
-                  <span className="text-outline-variant p-1">29</span>
-                  <span className="text-outline-variant p-1">30</span>
-                  <span className="p-1.5 rounded hover:bg-surface-container text-on-surface">
-                    1
-                  </span>
-                  <span className="p-1.5 rounded hover:bg-surface-container text-on-surface">
-                    2
-                  </span>
-                  <span className="p-1.5 rounded hover:bg-surface-container text-on-surface">
-                    3
-                  </span>
-                  <span className="p-1.5 rounded hover:bg-surface-container text-on-surface">
-                    4
-                  </span>
-                  <span className="p-1.5 rounded hover:bg-surface-container text-on-surface">
-                    5
-                  </span>
-                  <span className="p-1.5 rounded hover:bg-surface-container text-on-surface">
-                    6
-                  </span>
-                  <span className="p-1.5 rounded hover:bg-surface-container text-on-surface">
-                    7
-                  </span>
-                  <span className="p-1.5 rounded hover:bg-surface-container text-on-surface">
-                    8
-                  </span>
-                  <span className="p-1.5 rounded hover:bg-surface-container text-on-surface">
-                    9
-                  </span>
-                  <span className="p-1.5 rounded hover:bg-surface-container text-on-surface">
-                    10
-                  </span>
-                  <span className="p-1.5 rounded hover:bg-surface-container text-on-surface">
-                    11
-                  </span>
-                  <span className="p-1.5 rounded hover:bg-surface-container text-on-surface">
-                    12
-                  </span>
-                  <span className="p-1.5 rounded hover:bg-surface-container text-on-surface">
-                    13
-                  </span>
-                  <span className="p-1.5 rounded hover:bg-surface-container text-on-surface">
-                    14
-                  </span>
-                  <span className="p-1.5 rounded hover:bg-surface-container text-on-surface">
-                    15
-                  </span>
-                  <span className="p-1.5 rounded hover:bg-surface-container text-on-surface">
-                    16
-                  </span>
-                  <span className="p-1.5 rounded hover:bg-surface-container text-on-surface">
-                    17
-                  </span>
-                  <span className="p-1.5 rounded-l bg-primary text-surface-bright font-semibold">
-                    18
-                  </span>
-                  <span className="p-1.5 bg-primary/80 text-surface-bright font-semibold">
-                    19
-                  </span>
-                  <span className="p-1.5 rounded-r bg-primary text-surface-bright font-semibold">
-                    20
-                  </span>
-                  <span className="p-1.5 rounded hover:bg-surface-container text-on-surface">
-                    21
-                  </span>
-                  <span className="p-1.5 rounded hover:bg-surface-container text-on-surface">
-                    22
-                  </span>
-                  <span className="p-1.5 rounded hover:bg-surface-container text-on-surface">
-                    23
-                  </span>
-                  <span className="p-1.5 rounded hover:bg-surface-container text-on-surface">
-                    24
-                  </span>
-                  <span className="p-1.5 rounded hover:bg-surface-container text-on-surface">
-                    25
-                  </span>
-                  <span className="p-1.5 rounded hover:bg-surface-container text-on-surface">
-                    26
-                  </span>
-                  <span className="p-1.5 rounded hover:bg-surface-container text-on-surface">
-                    27
-                  </span>
-                  <span className="p-1.5 rounded hover:bg-surface-container text-on-surface">
-                    28
-                  </span>
-                  <span className="p-1.5 rounded hover:bg-surface-container text-on-surface">
-                    29
-                  </span>
-                  <span className="p-1.5 rounded hover:bg-surface-container text-on-surface">
-                    30
-                  </span>
-                  <span className="p-1.5 rounded hover:bg-surface-container text-on-surface">
-                    31
-                  </span>
-                </div>
+              <div className="flex items-center gap-3 text-on-surface">
+                <span className="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-primary text-xs font-semibold">✓</span>
+                <span className="font-body-md text-body-md">Flexible cancellation with advance notice</span>
               </div>
-              {/* Submit Button */}
-              <a
-                className="w-full inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-container text-surface-bright py-3.5 rounded-lg font-label-lg text-label-lg transition-all shadow-sm"
-                data-path="availability"
-                href="#"
-              >
-                <span>Request Reservation for 2 Nights</span>
-                <span className="material-symbols-outlined text-sm">
-                  arrow_forward
-                </span>
-              </a>
+              <div className="pt-2 border-t border-surface-container-highest">
+                <p className="font-body-sm text-body-sm text-outline">
+                  Up to 15 guests • 100% exclusive use • Responds within 24 hrs
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -783,7 +494,7 @@ export default function Home() {
               The Setting
             </span>
             <h3 className="font-headline-lg text-headline-lg text-primary">
-              Discover Bataan's Natural Calm
+              Discover Bataan&apos;s Natural Calm
             </h3>
             <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
               Nestled in Bataan — scenic coastal air, heritage sites, and
@@ -797,13 +508,10 @@ export default function Home() {
             <div className="pt-2">
               <a
                 className="inline-flex items-center gap-2 font-label-md text-label-md text-primary hover:text-primary-container font-semibold transition-colors"
-                data-path="location"
-                href="#"
+                href="/location"
               >
                 Explore Area Guide &amp; Driving Directions
-                <span className="material-symbols-outlined text-base">
-                  arrow_forward
-                </span>
+                <ArrowRight className="h-4 w-4 text-secondary" />
               </a>
             </div>
           </div>
@@ -811,19 +519,17 @@ export default function Home() {
           <div className="lg:col-span-6">
             <div
               className="w-full h-72 rounded-lg shadow-sm bg-cover bg-center overflow-hidden flex items-end p-4"
-              data-location="Pilar, Bataan, Philippines"
+              data-location="Cupang North, Bataan, Philippines"
               style={{
                 backgroundImage:
-                  'url("https://lh3.googleusercontent.com/aida-public/AB6AXuDE5CqChquvPZ-iHcNOggaRX_5UKSJMjLoSMTNrhMxHbHSHF8CThGhn2LppKXLIJgmO2Ps8LtfRVvKtg8s7d1aXAo-O8olSt834cOSRMYSMB7gT6IdY4bgYzot3bJdYjkiBRQBlMMqL68eve3NClCai8y2n4TGN5Ly2xS2xoefWe6vpI2YnBkxjrtR7Df5nucJjm-fMjIfeJ2OwWX_oXPbvyVJSsLIxKnNkyB6EwoKPwynMIchZIVsLWw")'
+                  'url("https://lh3.googleusercontent.com/aida-public/AB6AXuDE5CqChquvPZ-iHcNOggaRX_5UKSJMjLoSMTNrhMxHbHSHF8CThGhn2LppKXLIJgmO2Ps8LtfRVvKtg8s7d1aXAo-O8olSt834cOSRMYSMB7gT6IdY4bgYzot3bJdYjkiBRQBlMMqL68eve3NClCai8y2n4TGN5Ly2xS2xoefWe6vpI2YnBkxjrtR7Df5nucJjm-fMjIfeJ2OwWX_oXPbvyVJSsLIxKnNkyB6EwoKPwynMIchZIVsLWw")',
               }}
             >
               <div className="bg-surface-bright/95 backdrop-blur-md px-4 py-2.5 rounded-lg shadow-sm flex items-center gap-3">
-                <span className="material-symbols-outlined text-primary text-xl">
-                  pin_drop
-                </span>
+                <MapPin className="h-5 w-5 text-primary" />
                 <div>
                   <p className="font-label-md text-label-md text-primary font-semibold">
-                    Pilar, Bataan Peninsula
+                    Cupang North, Bataan Peninsula
                   </p>
                   <p className="font-body-sm text-body-sm text-outline">
                     Scenic &amp; quiet rural setting
@@ -834,11 +540,12 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* Warm Final Inquiry CTA Banner */}
       <section className="w-full bg-primary text-on-primary py-space-3xl mt-space-2xl">
         <div className="max-w-[1240px] mx-auto px-gutter-mobile lg:px-gutter-desktop text-center flex flex-col items-center">
           <div className="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-secondary-fixed mb-4">
-            <span className="material-symbols-outlined text-xl">spa</span>
+            <TowelRack className="h-5 w-5 text-primary" />
           </div>
           <h3 className="font-headline-xl text-headline-xl text-surface-bright max-w-2xl mb-4">
             Your Private Tropical Sanctuary Awaits
@@ -851,8 +558,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row items-center gap-4">
             <a
               className="bg-secondary-fixed hover:bg-secondary-fixed-dim text-on-secondary-fixed px-8 py-3.5 rounded-lg font-label-lg text-label-lg shadow-md transition-all"
-              data-path="availability"
-              href="#"
+              href="/availability"
             >
               Send an Inquiry
             </a>
@@ -860,14 +566,12 @@ export default function Home() {
               className="bg-primary-container hover:bg-tertiary-container text-surface-bright px-8 py-3.5 rounded-lg font-label-lg text-label-lg transition-all flex items-center gap-2"
               href="tel:+639178008455"
             >
-              <span className="material-symbols-outlined text-base">call</span>
+              <Phone className="h-5 w-5 text-primary" />
               Speak with Villa Concierge
             </a>
           </div>
         </div>
       </section>
     </div>
-  </main>
-</>
   );
 }
